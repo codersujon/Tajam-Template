@@ -146,7 +146,6 @@ ul {
 }
 .nav-bg{
     background-color: rgb(9, 5, 47);
-    border-bottom: 1px solid var(--theme-color);
 }
 .navbar{
     transition: 1s all ease;
