@@ -60,8 +60,17 @@ $(document).ready(function () {
     autoplay: false
   });
 
+  //STICKY TOP
+  $(window).scroll(function(){
+	var scrolling = $(this).scrollTop();
+	var sticky = $('.sticky__top');
 
-
+	if (scrolling >= 100) {
+		sticky.addClass('nav-bg');
+	} else {
+		sticky.removeClass('nav-bg');
+	}
+  });
 
 });
 
