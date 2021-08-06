@@ -1,0 +1,52 @@
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .banner__content p,
+    .peopleSay__text p {
+      padding: 0 15px;
+    }
+    .banner__content p br {
+       display: none;
+       margin: 0 50px;
+    }
+    .project__left h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    } 
+    .project__right a,
+    .contact__left h2, .contact__right h2,
+    .copyright p,
+    .footer-links{
+      text-align: center;
+    }
+    .footer-links a::last-child{
+      margin-right: 0;
+    }
+    .banner-slider .slick-dots {
+      bottom: -100px;
+    }
+    .project__img img {
+      margin-bottom: 30px;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    
+
+}
