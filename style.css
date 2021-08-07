@@ -138,6 +138,7 @@ ul {
     text-transform: uppercase;
     padding-right: 10px;
     padding-left: 10px;
+    font-weight: 500;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -149,6 +150,7 @@ ul {
 }
 .navbar{
     transition: 1s all ease;
+    z-index: 99999;
 }
 
 /* MENU END */
