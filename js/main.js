@@ -16,7 +16,6 @@ $(document).ready(function () {
     overlayColor: 'rgba(65, 61, 75, 0.8);'
   });
 
-
   //TEAM AREA ACTIVE - SLICK SLIDER
   $('.team-active').slick({
     centerMode: true,
@@ -28,6 +27,29 @@ $(document).ready(function () {
     autoplay: true,
     arrows: false,
     dots: true,
+	responsive: [
+		{
+		  breakpoint: 992,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 768,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 576,
+		  settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		  }
+		}
+	  ]
   });
 
   //PROJECT IMAGE - VENOBOX
@@ -65,16 +87,14 @@ $(document).ready(function () {
 	var scrolling = $(this).scrollTop();
 	var sticky = $('.sticky__top');
 
-	if (scrolling >= 100) {
+	if (scrolling >= 50) {
 		sticky.addClass('nav-bg');
 	} else {
 		sticky.removeClass('nav-bg');
 	}
   });
 
-});
-
-//SCROLL TO TOP 
+  //SCROLL TO TOP 
 var scrolltotop = {
 	setting: {
 		startline: 100,
@@ -143,3 +163,7 @@ var scrolltotop = {
 	}
 };
 scrolltotop.init();
+
+
+});
+

@@ -159,7 +159,7 @@ ul {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 850px;
+    min-height: 750px;
 }
 
 #banner::before,
