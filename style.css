@@ -145,10 +145,12 @@ ul {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: var(--theme-color)
 }
-.nav-bg{
+
+.nav-bg {
     background-color: rgb(9, 5, 47);
 }
-.navbar{
+
+.navbar {
     transition: 1s all ease;
     z-index: 99999;
 }
@@ -630,9 +632,11 @@ ul {
     margin-right: 35px;
     text-transform: uppercase;
 }
-.footer-links a:last-child{
+
+.footer-links a:last-child {
     margin-right: 0px;
 }
+
 .footer-links a:hover {
     color: var(--theme-color);
 }
@@ -655,4 +659,5 @@ ul {
     border: 2px solid var(--theme-color);
     padding: 5px;
 }
+
 /* SCROLL TO TOP END */
