@@ -5,6 +5,7 @@
     --theme-color: #00e0d0;
     --heading-color: #413d4b;
     --body-text-color: #7a7a7a;
+    --btn-color: rgb(9, 5, 47);
 }
 
 * {
@@ -110,19 +111,59 @@ ul {
 .border-btn {
     border-color: var(--theme-color);
     color: var(--theme-color);
+    position: relative;
+    z-index: 1;
 }
 
 .border-btn:hover {
-    color: var(--heading-color);
-    background: var(--white);
+    color: var(--btn-color);
     border-color: transparent;
+}
+
+.heading-btn {
+    position: relative;
+    z-index: 1;
 }
 
 .heading-btn:hover {
     border-color: transparent;
-    background: rgb(9, 5, 47);
     color: var(--white);
 }
+
+.border-btn::before,
+.heading-btn::before {
+    position: absolute;
+    content: '';
+    transition: .4s all ease;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.border-btn::before {
+    background-color: var(--white);
+}
+
+.heading-btn::before {
+    background-color: var(--btn-color);
+}
+
+.border-btn:hover:before,
+.heading-btn:hover:before {
+    transition: .4s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.form-control:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 .25rem rgba(0, 224, 208, .25);
+}
+
 
 /* MENU START */
 .navbar-dark .navbar-nav .nav-link.active,
