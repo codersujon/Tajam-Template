@@ -46,6 +46,10 @@
   .footer-widget button {
     padding: 14px 30px;
   }
+  .peopleSay-right,
+  .peopleSay-left {
+    display: none !important;
+  }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -63,6 +67,10 @@
   .footer-links a,
   .copyright p {
     text-align: left;
+  }
+  .peopleSay-right,
+  .peopleSay-left {
+    display: none !important;
   }
 }
 
@@ -99,6 +107,14 @@
     display: none;
     margin: 0 50px;
   }
+  .peopleSay-right,
+  .peopleSay-left {
+    top: 74%;
+  }
+  .peopleSay-right,
+  .peopleSay-left {
+    display: none !important;
+  }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -118,7 +134,14 @@
   .peopleSay__text p {
     padding: 0 50px;
   }
+  .peopleSay-left {
+    left: 26% !important;
+  }
+  .peopleSay-right {
+    right: 28% !important;
+  }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}

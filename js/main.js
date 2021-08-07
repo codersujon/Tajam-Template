@@ -79,7 +79,15 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: '.peopleSay-left',
     nextArrow: '.peopleSay-right',
-    autoplay: false
+	responsive: [
+		{
+		  breakpoint: 992,
+		  settings: {
+			slidesToShow: 5,
+			slidesToScroll: 1
+		  }
+		}
+	  ]
   });
 
   //STICKY TOP
